@@ -57,6 +57,7 @@ func main() {
 			log.Printf("Error running %s: %v", name, err)
 			status = 1
 		}
+		cleanup(fullPath)
 	}
 
 	os.Exit(status)
